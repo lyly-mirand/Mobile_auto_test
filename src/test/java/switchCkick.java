@@ -10,7 +10,7 @@ import java.net.URL;
 public class switchCkick {
 
     @Test
-    public void switchCkick() throws MalformedURLException, InterruptedException {
+    public void switchCkickTest() throws MalformedURLException, InterruptedException {
         DesiredCapabilities capabilities1 = new DesiredCapabilities();
         capabilities1.setCapability("deviceName", "Pixel");
         capabilities1.setCapability("udid", "emulator-5554");
@@ -29,6 +29,8 @@ public class switchCkick {
         switchClick.click();
         driver1.quit();
 
+
+        System.out.println("Тест выполнен");
 
     }
 }
